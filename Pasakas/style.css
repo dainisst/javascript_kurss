@@ -19,7 +19,7 @@ article{
     background-color: bisque;
     opacity: 0.5;
 }
-article h2{
+h2{
     font-size: 20px;
     font-family: sans-serif;
     color: black;
@@ -33,13 +33,22 @@ section{
     /* width: 800px;
     background-color: bisque;     */
 }
-div{
+div.transp-box{
     width: 800px;
     background-color: bisque;
     opacity: 0.5; 
 }
-div p{
+div.transp-box p{
     font-size: 16px;
     font-family: sans-serif;
     color: black;
+}
+a{
+    font-size: 16px;
+    font-family: sans-serif;
+    text-decoration: none;
+    background-color: blue;
+    color: azure;
+    margin-left: 5px;
+    
 }
