@@ -1,5 +1,6 @@
 body{
     background-image: url(abstract_L.jpg);
+    background-attachment: fixed;
 }
 
 h1{
@@ -13,16 +14,32 @@ h3{
     color: #534f4f;
     font-style: italic;
 }
-h2{
-    font-size: 20px;
-    font-family: sans-serif;
-}
-p{
-    font-size: 16px;
-    font-family: sans-serif;
-}
-section{
+article{
     width: 800px;
     background-color: bisque;
-    
+    opacity: 0.5;
+}
+article h2{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: black;
+}
+article p{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: black;
+}
+section{
+    /* width: 800px;
+    background-color: bisque;     */
+}
+div{
+    width: 800px;
+    background-color: bisque;
+    opacity: 0.5; 
+}
+div p{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: black;
 }
