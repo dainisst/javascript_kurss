@@ -50,5 +50,46 @@ a{
     background-color: blue;
     color: azure;
     margin-left: 5px;
-    
+    padding: 8px;    
+}
+a.extend{
+    color: red;
+    background-color: bisque;
+    padding: 0;
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+}
+.linija{
+    height: 2px;
+    background-color: #c57a19;
+}
+.submitBtn{
+    font-size: 16px;
+    font-family: sans-serif;
+    text-decoration: none;
+    background-color: #26d13d;
+    color: #010808;
+    margin-left: 5px;
+    padding: 6px;
+}
+legend{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+label{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+input{
+    height: 20px;
+}
+td{
+
+}
+fieldset{
+    width: 600px;
+}
+#radioLbl{
+
 }
