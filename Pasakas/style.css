@@ -13,6 +13,7 @@ h3{
     font-family: sans-serif;
     color: #534f4f;
     font-style: italic;
+    vertical-align: top;
 }
 article{
     width: 800px;
@@ -29,10 +30,7 @@ article p{
     font-family: sans-serif;
     color: black;
 }
-section{
-    /* width: 800px;
-    background-color: bisque;     */
-}
+
 div.transp-box{
     width: 800px;
     background-color: bisque;
@@ -86,15 +84,16 @@ label{
     font-size: 16px;
     font-family: sans-serif;
 }
-input{
+/* input{
     height: 20px;
-}
-td{
-
-}
+} */
 fieldset{
     width: 600px;
 }
-#radioLbl{
-    
+
+button{
+    border-radius: 10px;
+}
+tr{
+    height: 40px;
 }
