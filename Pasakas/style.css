@@ -50,7 +50,12 @@ a{
     background-color: blue;
     color: azure;
     margin-left: 5px;
-    padding: 8px;    
+    padding: 8px;
+    border-radius: 2rem;    
+}
+a:hover{
+    background-color: #9a9aee;
+    color: black;
 }
 a.extend{
     color: red;
@@ -91,5 +96,5 @@ fieldset{
     width: 600px;
 }
 #radioLbl{
-
+    
 }
