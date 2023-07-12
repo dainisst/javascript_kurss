@@ -36,7 +36,14 @@
   height: 638px;
   flex-shrink: 0;
   background: #C421ED;
-  margin: 0;
+  margin: auto;  
+}
+.main-sub-title{
+  display: flex;
+  height: 150px;
+}
+.main-sub-title h1{
+  margin: auto;
 }
 .main-sub-sub{
   display: flex;
@@ -48,6 +55,16 @@
   flex-shrink: 0;
   background: #D9D9D9;
   text-align: center;
+}
+.main-sub-sub-container h1{
+  padding: 20px;
+  
+}
+.main-sub-sub-container p{
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+ 
 }
 .footer{
   display: flex;
