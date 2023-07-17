@@ -23,7 +23,7 @@ for(k = vards.length - 1; k >= 0; k--){
 }
 console.log(vardsJauns);
 
-let num2 = 54;
+let num2 = 123654;
 result = 0;
 
 let num2String = num2.toString().split('').map(str => {
