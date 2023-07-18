@@ -3,14 +3,14 @@
 
 
 .container{
-  width: 1440px;
+  max-width: 1440px;
   height: 1084px;
   background: #FFF;
 }
 .header{
   display: flex;
-  width: 1440px;
-  height: 154px;
+  max-width: 1440px;
+  height: 154px;  
   flex-shrink: 0;
   background: #D9D9D9;  
 }
@@ -20,7 +20,7 @@
 }
 .nav{
   display: flex;
-  width: 1440px;
+  max-width: 1440px;
   height: 71px;
   flex-shrink: 0;
   background: #24D680;
@@ -30,7 +30,7 @@
   font-family: Inter;
 }
 .main{
-  width: 1440px;
+  max-width: 1440px;
   height: 759px;
   flex-shrink: 0;
   background: #A2F3F9;
@@ -76,7 +76,7 @@
 }
 .footer{
   display: flex;
-  width: 1440px;
+  max-width: 1440px;
   height: 100px;
   flex-shrink: 0;
   background: #D9D9D9;
