@@ -38,7 +38,7 @@
   align-items: center;
 }
 .main-sub{
-  width: 1318px;
+  max-width: 1318px;
   height: 638px;
   flex-shrink: 0;
   background: #C421ED;
@@ -46,6 +46,7 @@
 }
 .main-sub-title{
   display: flex;
+  width: 1318px;
   height: 150px;
 }
 .main-sub-title h1{
@@ -54,6 +55,7 @@
 }
 .main-sub-sub{
   display: flex;
+  width: 1318px;
   justify-content: space-evenly;
 }
 .main-sub-sub-container{
@@ -84,4 +86,8 @@
 .footer h1{
   margin: auto;
   font-family: Inter;
+}
+
+@media screen {
+  
 }
