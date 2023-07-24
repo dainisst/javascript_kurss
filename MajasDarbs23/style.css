@@ -75,7 +75,18 @@
   margin: auto;
   font-family: Inter;
 }
-
-@media screen {
-  
+label{
+  font-family: Inter;
+}
+input{
+  font-family: Inter;
+  padding: 3px;
+  width: 50px;  
+}
+button{
+  font-family: Inter;
+  height: 35px;
+  border-radius: 7px;
+  background-color: rgb(213, 231, 130);
+  margin-top: 8px;
 }

@@ -35,3 +35,30 @@ for(l = 0; l < num2String.length; l++){
 }
 
 console.log(result);
+
+// Faktoriāļa aprēķins
+
+const faktorialisBtn = document.querySelector("#faktorialisBtn");
+const faktorialisOut = document.querySelector("#outputFaktorialis");
+
+faktorialisBtn.addEventListener("click", () => { 
+  const faktorialisIn = document.querySelector("#inputFaktorialis").value;
+  let result = 1;
+  for(ia = 1; ia <= faktorialisIn; ia++){
+    result = result * ia;
+  }
+  faktorialisOut.innerHTML = `Faktorālis ir: ${result}`;
+})
+
+// Faktorāļa summas aprēķins
+
+const faktorialisOutSum = document.querySelector("#outputFaktorialisSum");
+
+faktorialisBtn.addEventListener("click", () => { 
+  const faktorialisIn = document.querySelector("#inputFaktorialis").value;
+  let resultSum = 0;
+  for(ib = 1; ib <= faktorialisIn; ib++){
+    resultSum = resultSum + ib;
+  }
+  faktorialisOutSum.innerHTML = `Summējošais Faktorālis ir: ${resultSum}`;
+})
