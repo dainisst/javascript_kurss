@@ -70,7 +70,7 @@ let vardsNew = "";
 const tekstsBtn = document.querySelector("#textBtn");
 
 function mFunction (){  
-  let tekstsIn = document.querySelector("#inputTeksts");
+  let tekstsIn = document.querySelector("#inputTeksts").Value;
   let tekstsArray = tekstsIn.split("");
   for(ka = tekstsIn.length - 1; ka >= 0; ka--){
     vardsNew = vardsNew + tekstsArray[ka]; 
