@@ -62,3 +62,20 @@ faktorialisBtn.addEventListener("click", () => {
   }
   faktorialisOutSum.innerHTML = `Summējošais Faktorālis ir: ${resultSum}`;
 })
+
+// Apgrieztais teksts
+
+const tekstsOut = document.querySelector("#outputTeksts");
+let vardsNew = "";
+const tekstsBtn = document.querySelector("#textBtn");
+
+function mFunction (){  
+  let tekstsIn = document.querySelector("#inputTeksts");
+  let tekstsArray = tekstsIn.split("");
+  for(ka = tekstsIn.length - 1; ka >= 0; ka--){
+    vardsNew = vardsNew + tekstsArray[ka]; 
+  }
+  tekstsOut.innerHTML = vardsNew;
+}
+
+tekstsBtn.addEventListener('click', mFunction());

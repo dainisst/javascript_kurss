@@ -80,8 +80,10 @@ label{
 }
 input{
   font-family: Inter;
-  padding: 3px;
-  width: 50px;  
+  padding: 3px;    
+}
+#inputFaktorialis{
+  width: 50px;
 }
 button{
   font-family: Inter;
@@ -89,4 +91,10 @@ button{
   border-radius: 7px;
   background-color: rgb(213, 231, 130);
   margin-top: 8px;
+}
+#inputTeksts{
+  margin-top: 8px;
+}
+#outputTeksts{
+  
 }
