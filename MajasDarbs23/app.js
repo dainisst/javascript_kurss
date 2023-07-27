@@ -4,25 +4,26 @@ let faktorials = 1;
 let vards = "Ārmstrongs nolaidās uz mēness!";
 let vardsJauns = "";
 
+//faktorialis saskaitits
 for(i = 1; i <= num; i++){
   summa = summa + i;
 }
 
 console.log(summa);
-
+//faktorialis
 for(j = 1; j <= num; j++){
   faktorials = faktorials * j;
 }
 
 console.log(faktorials);
-
+//apgrieztais teksts
 let vardsArray = vards.split("");
 
 for(k = vards.length - 1; k >= 0; k--){
   vardsJauns = vardsJauns + vardsArray[k]; 
 }
 console.log(vardsJauns);
-
+//ciparu summa
 let num2 = 123654;
 result = 0;
 
@@ -68,14 +69,17 @@ faktorialisBtn.addEventListener("click", () => {
 const tekstsOut = document.querySelector("#outputTeksts");
 let vardsNew = "";
 const tekstsBtn = document.querySelector("#textBtn");
+const tekstsIn = document.querySelector("#inputTeksts");
+console.log(tekstsIn);
 
-function mFunction (){  
-  let tekstsIn = document.querySelector("#inputTeksts").Value;
-  let tekstsArray = tekstsIn.split("");
-  for(ka = tekstsIn.length - 1; ka >= 0; ka--){
-    vardsNew = vardsNew + tekstsArray[ka]; 
-  }
-  tekstsOut.innerHTML = vardsNew;
-}
 
-tekstsBtn.addEventListener('click', mFunction());
+// function mFunction (){  
+//   let tekstsIn = document.querySelector("#inputTeksts").Value;
+//   let tekstsArray = tekstsIn.split("");
+//   for(ka = tekstsIn.length - 1; ka >= 0; ka--){
+//     vardsNew = vardsNew + tekstsArray[ka]; 
+//   }
+//   tekstsOut.innerHTML = vardsNew;
+// }
+
+// tekstsBtn.addEventListener('click', mFunction());
