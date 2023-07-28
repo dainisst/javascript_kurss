@@ -70,8 +70,10 @@ const tekstsOut = document.querySelector("#outputTeksts");
 let vardsNew = "";
 const tekstsBtn = document.querySelector("#textBtn");
 const tekstsIn = document.querySelector("#inputTeksts");
-console.log(tekstsIn);
 
+tekstsBtn.addEventListener('click', function(){
+  tekstsOut.innerHTML = tekstsIn.value;
+})
 
 // function mFunction (){  
 //   let tekstsIn = document.querySelector("#inputTeksts").Value;
