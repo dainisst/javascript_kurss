@@ -86,7 +86,7 @@ input{
   font-family: Inter;
   padding: 3px;    
 }
-#inputFaktorialis{
+#inputFaktorialis, #inputSumma{
   width: 50px;
 }
 button{

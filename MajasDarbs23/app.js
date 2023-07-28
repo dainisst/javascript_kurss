@@ -72,16 +72,28 @@ const tekstsBtn = document.querySelector("#textBtn");
 const tekstsIn = document.querySelector("#inputTeksts");
 
 tekstsBtn.addEventListener('click', function(){
-  tekstsOut.innerHTML = tekstsIn.value;
+  let tekstsArray = tekstsIn.value.split("");
+  for(m = tekstsIn.value.length - 1; m >= 0; m--){
+    vardsNew = vardsNew + tekstsArray[m];
+  }
+  tekstsOut.innerHTML = `Vārds reverse ir: ${vardsNew}`;
 })
 
-// function mFunction (){  
-//   let tekstsIn = document.querySelector("#inputTeksts").Value;
-//   let tekstsArray = tekstsIn.split("");
-//   for(ka = tekstsIn.length - 1; ka >= 0; ka--){
-//     vardsNew = vardsNew + tekstsArray[ka]; 
-//   }
-//   tekstsOut.innerHTML = vardsNew;
-// }
+// Ciparu summa
 
-// tekstsBtn.addEventListener('click', mFunction());
+const summaOut = document.querySelector("#outputSumma");
+const summaBtn = document.querySelector("#summaBtn");
+const summaInput = document.querySelector("#inputSumma");
+let sumCipariem = 0;
+
+summaBtn.addEventListener('click', function(){
+  let sumCipari = summaInput.toString().split('').map(str => {
+    return Number(str);
+  });
+  
+  for(b = 0; b < sumCipari.length; b++){
+    summCipariem = summCipariem + sumCipari[b];
+  }
+  summaOut.innerHTML = sumCipariem;
+})
+
