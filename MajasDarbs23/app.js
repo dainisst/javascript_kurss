@@ -82,18 +82,11 @@ tekstsBtn.addEventListener('click', function(){
 // Ciparu summa
 
 const summaOut = document.querySelector("#outputSumma");
-const summaBtn = document.querySelector("#summaBtn");
+const summaBtn = document.querySelector("#SummaBtn");
 const summaInput = document.querySelector("#inputSumma");
-let sumCipariem = 0;
+let sumCipariem = 5;
 
 summaBtn.addEventListener('click', function(){
-  let sumCipari = summaInput.toString().split('').map(str => {
-    return Number(str);
-  });
-  
-  for(b = 0; b < sumCipari.length; b++){
-    summCipariem = summCipariem + sumCipari[b];
-  }
-  summaOut.innerHTML = sumCipariem;
+  summaOut.innerHTML = parseInt(summaInput.value) + sumCipariem;
 })
 
