@@ -84,9 +84,17 @@ tekstsBtn.addEventListener('click', function(){
 const summaOut = document.querySelector("#outputSumma");
 const summaBtn = document.querySelector("#SummaBtn");
 const summaInput = document.querySelector("#inputSumma");
-let sumCipariem = 5;
+let sumCipariem = 1;
 
 summaBtn.addEventListener('click', function(){
-  summaOut.innerHTML = parseInt(summaInput.value) + sumCipariem;
+  let skaitlis = parseInt(summaInput.value);
+  let skaitlisArray = skaitlis.toString().split('').map(str => {
+    return Number(str);
+  });
+  let apgriezts = 0;
+  for(m = 0; m < skaitlisArray.length; m++){
+    apgriezts = apgriezts + skaitlisArray[m];
+  }
+  summaOut.innerHTML = `Skaitļa ciparu summa ir: ${apgriezts}`;
 })
 
