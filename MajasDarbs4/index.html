@@ -4,9 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=
   , initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
+  <h1>Mājas darbs - formas</h1>
+  <form action="" id="textoutForm">
+    <textarea name="inputText" id="inputText" cols="30" rows="10" oninput="myFunction()"></textarea>
+    <p id="outputText"> </p>
+  </form>
+
+  <h1>Mājas darbs - dialogs</h1>
+
+
+    <dialog id="dialogCntn">
+      <form action="" id="formCntn">
+        <p>Ievadi datus</p>
+        <div>
+          <label>Vārds:</label>
+          <input type="text" name="vards" id="inputVards">
+        </div>
+        <div>
+          <label for="">Uzvārds:</label>
+          <input type="text" name="uzvards" id="inputUzvards">
+        </div>
+        <div>
+          <label for="">epasts:</label>
+          <input type="email" name="epasts" id="inputEpasts">
+        </div>
+        <div>
+          <button value="cancel" formmethod="dialog">Atcelt</button>
+          <button id="confirmBtn" value="default">Apstiprināt</button>
+        </div>
+        
+      </form>
+    </dialog>
+    <button id="registerBtn">Reģistrēties</button>
+<br><br><br>
+<table>
+  <tr>
+    <td><label>Vārds:</label></td>
+    <td><input type="text" name="vards" id="inputVards"></td>
+  </tr>
+  <tr>
+    <td><label>Uzvārds:</label></td>
+    <td><input type="text" name="uzvards" id="inputUzvards"></td>
+  </tr>
+  <tr>
+    <td><label>epasts:</label></td>
+    <td><input type="email" name="epasts" id="inputEpasts"></td>
+  </tr>
+
+
+</table>
+    
+
+
+  
+  <!-- <dialog open>
+    <p>Greetings, one and all!</p>
+    <form method="dialog">
+      <button>OK</button>
+    </form>
+  </dialog> -->
 
 
 
@@ -17,5 +77,6 @@
         1. Klienta vārds uzvārds un epasts
         2. adrese, pasta indekss u.t.t
         3. Paldies jūsu pasūtijums ir noformēts -->
+        <script src="app.js"></script>
 </body>
 </html>
