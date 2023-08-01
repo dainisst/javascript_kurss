@@ -13,48 +13,59 @@
     <textarea name="inputText" id="inputText" cols="30" rows="10" oninput="myFunction()"></textarea>
     <p id="outputText"> </p>
   </form>
+  <br>
 
   <h1>Mājas darbs - dialogs</h1>
 
 
     <dialog id="dialogCntn">
+      <p>Ievadiet datus</p>
       <form action="" id="formCntn">
-        <p>Ievadi datus</p>
-        <div>
-          <label>Vārds:</label>
-          <input type="text" name="vards" id="inputVards">
-        </div>
-        <div>
-          <label for="">Uzvārds:</label>
-          <input type="text" name="uzvards" id="inputUzvards">
-        </div>
-        <div>
-          <label for="">epasts:</label>
-          <input type="email" name="epasts" id="inputEpasts">
-        </div>
-        <div>
-          <button value="cancel" formmethod="dialog">Atcelt</button>
-          <button id="confirmBtn" value="default">Apstiprināt</button>
-        </div>
-        
+        <table>
+          <tr>
+            <td><label>Vārds:</label></td>
+            <td><input type="text" name="vards" id="inputVards"></td>
+          </tr>
+          <tr>
+            <td><label>Uzvārds:</label></td>
+            <td><input type="text" name="uzvards" id="inputUzvards"></td>
+          </tr>
+          <tr>
+            <td><label>epasts:</label></td>
+            <td><input type="email" name="epasts" id="inputEpasts"></td>
+          </tr>
+        </table><br>
+        <button value="cancel" formmethod="dialog">Atcelt</button>
+        <button id="confirmBtn" value="">Turpināt</button>
       </form>
     </dialog>
+      
+    <dialog id="dialogCntn2">
+      <p>Ievadiet adresi</p>
+      <form action="" id="formCntn">
+        <table>
+          <tr>
+            <td><label>Adrese:</label></td>
+            <td><input type="text" name="adrese" id="inputAdrese"></td>
+          </tr>
+          <tr>
+            <td><label>Pasta indekss:</label></td>
+            <td><input type="text" name="indekss" id="inputIndekss"></td>
+          </tr>
+         </table><br>
+        <button value="cancel" formmethod="dialog">Atcelt</button>
+        <button id="confirmBtn2" value="default">Apstiprināt</button>
+      </form>
+
+    </dialog>
+
+    <dialog id="dialogCntn3">
+      <p>Jūs esat perieģistrēts</p>      
+    </dialog>
+
     <button id="registerBtn">Reģistrēties</button>
-<br><br><br>
-<table>
-  <tr>
-    <td><label>Vārds:</label></td>
-    <td><input type="text" name="vards" id="inputVards"></td>
-  </tr>
-  <tr>
-    <td><label>Uzvārds:</label></td>
-    <td><input type="text" name="uzvards" id="inputUzvards"></td>
-  </tr>
-  <tr>
-    <td><label>epasts:</label></td>
-    <td><input type="email" name="epasts" id="inputEpasts"></td>
-  </tr>
-</table>
+
+
     
 <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog -->
 
