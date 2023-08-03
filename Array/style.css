@@ -1,0 +1,13 @@
+#btn{  
+  background: #fa7979;
+  border-radius: 10px;
+}
+#tableCol{
+  width: 300px;
+  background-color: aquamarine;
+  border-radius: 7px;
+}
+td{
+  padding: 5px;
+  padding-left: 10px;
+}
