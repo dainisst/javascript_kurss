@@ -4,10 +4,11 @@
 }
 #tableCol{
   width: 300px;
-  background-color: aquamarine;
+  background-color: rgb(161, 192, 221);
   border-radius: 7px;
 }
 td{
   padding: 5px;
   padding-left: 10px;
+  text-transform: capitalize;
 }
