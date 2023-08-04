@@ -1,14 +1,17 @@
-#btn{  
-  background: #fa7979;
-  border-radius: 10px;
+table{
+  border-collapse: colapse;
+  border-spacing: 0;
+  width: 500px;
 }
-#tableCol{
-  width: 300px;
-  background-color: rgb(161, 192, 221);
-  border-radius: 7px;
+tr:nth-child(odd) {
+  background-color: aquamarine;
 }
 td{
   padding: 5px;
   padding-left: 10px;
   text-transform: capitalize;
+}
+#btn{  
+  background: #fa7979;
+  border-radius: 10px;
 }
