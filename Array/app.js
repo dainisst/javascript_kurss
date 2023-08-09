@@ -60,7 +60,7 @@ inputBtn.addEventListener('click', () => {
 function listItems(){
     let items = "";
     for(i = 0; i < cities.length; i++){
-        items += `<li>${cities[i]}</li>`;
+        items += `<li>${cities[i]}<button id="delBtn">X</button></li>`;
     }
     return items;
 }

@@ -1,3 +1,11 @@
 li{
     list-style: none;
+    padding: 10px;    
+    margin: 5px;
+    font-size: 18px;
+    background-color: aquamarine;
+    
+}
+ul{
+    padding-left: 10px;
 }
