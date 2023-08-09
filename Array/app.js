@@ -21,22 +21,49 @@
 
 // arr2.forEach((item) => myTable.innerHTML += `<tr id="tableRow"><td id="tableCol">${item}</td><td id="tableColBtn"><button id="btn">X</button></td></tr>`);
 
-let myArr = [];
+// let myArr = [];
 
 
+// const inputBtn = document.querySelector("#inputBtn");
+// const outputCtn = document.querySelector("#outputContainer");
+
+// inputBtn.addEventListener('click', () => {
+//     const inputText = document.querySelector("#inputText").value;
+//     myArr.push(inputText); 
+//     showList();  
+// })
+
+// function showList(){
+//     myArr.forEach(element => {
+//         outputCtn.innerHTML += `<p id="outputText">${element}</p>`;
+//     });
+// }
+// // showList();
+// console.log(myArr);
+
+const cities = [
+    "riga",
+    "tallina",
+    "parize",
+    "londona",
+    "berline"
+];
+cities.push("vilna");
+const inputText = document.querySelector("#inputText");
 const inputBtn = document.querySelector("#inputBtn");
-const outputCtn = document.querySelector("#outputContainer");
 
 inputBtn.addEventListener('click', () => {
-    const inputText = document.querySelector("#inputText").value;
-    myArr.push(inputText); 
-    showList();  
+    cities.push(inputText.value);
+    document.querySelector("#outputContainer").innerHTML = `<ul>${listItems()}</ul>`;
+    inputText.value = '';   
 })
 
-function showList(){
-    myArr.forEach(element => {
-        outputCtn.innerHTML += `<p id="outputText">${element}</p>`;
-    });
+function listItems(){
+    let items = "";
+    for(i = 0; i < cities.length; i++){
+        items += `<li>${cities[i]}</li>`;
+    }
+    return items;
 }
-// showList();
-console.log(myArr);
+
+document.querySelector("#outputContainer").innerHTML = `<ul>${listItems()}</ul>`;
