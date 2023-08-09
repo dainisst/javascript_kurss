@@ -3,9 +3,12 @@ li{
     padding: 10px;    
     margin: 5px;
     font-size: 18px;
-    background-color: aquamarine;
-    
+    background-color: aquamarine;    
 }
 ul{
     padding-left: 10px;
+}
+#delBtn{
+    background: red;
+    border-radius: 10px;    
 }
