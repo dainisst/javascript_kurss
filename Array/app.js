@@ -48,7 +48,6 @@ const cities = [
     "londona",
     "berline"
 ];
-cities.push("vilna");
 const inputText = document.querySelector("#inputText");
 const inputBtn = document.querySelector("#inputBtn");
 
