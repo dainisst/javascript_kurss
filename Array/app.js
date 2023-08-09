@@ -9,15 +9,34 @@
 // arr1.forEach((element) => container.innerHTML += `<p>${element}</p>`);
 
 
-const arr2 = [];
+// let arr2 = [];
+
+// const inputBtn = document.querySelector("#inputBtn");
+// const myTable = document.querySelector(".myTable");
+// const inputBox = document.querySelector("#inputBox").value;
+
+// inputBtn.addEventListener('click', () => {      
+//     arr2.push(inputBox);     
+// });
+
+// arr2.forEach((item) => myTable.innerHTML += `<tr id="tableRow"><td id="tableCol">${item}</td><td id="tableColBtn"><button id="btn">X</button></td></tr>`);
+
+let myArr = [];
+
 
 const inputBtn = document.querySelector("#inputBtn");
-const myTable = document.querySelector(".myTable");
+const outputCtn = document.querySelector("#outputContainer");
 
 inputBtn.addEventListener('click', () => {
-    const inputBox = document.querySelector("#inputBox").value;  
-    arr2.push(inputBox);     
-});
+    const inputText = document.querySelector("#inputText").value;
+    myArr.push(inputText); 
+    showList();  
+})
 
-arr2.forEach((item) => myTable.innerHTML += `<tr id="tableRow"><td id="tableCol">${item}</td><td id="tableColBtn"><button id="btn">X</button></td></tr>`);
-
+function showList(){
+    myArr.forEach(element => {
+        outputCtn.innerHTML += `<p id="outputText">${element}</p>`;
+    });
+}
+// showList();
+console.log(myArr);
