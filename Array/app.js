@@ -41,28 +41,49 @@
 // // showList();
 // console.log(myArr);
 
-const cities = [
-    "riga",
-    "tallina",
-    "parize",
-    "londona",
-    "berline"
-];
-const inputText = document.querySelector("#inputText");
-const inputBtn = document.querySelector("#inputBtn");
+// const cities = [
+//     // "riga",
+//     // "tallina",
+//     // "parize",
+//     // "londona",
+//     // "berline"
+// ];
+// const inputText = document.querySelector("#inputText");
+// const inputBtn = document.querySelector("#inputBtn");
 
-inputBtn.addEventListener('click', () => {
-    cities.push(inputText.value);
-    document.querySelector("#outputContainer").innerHTML = `<ul>${listItems()}</ul>`;
-    inputText.value = '';   
-})
+// inputBtn.addEventListener('click', () => {
+//     cities.push(inputText.value);
+//     document.querySelector("#outputContainer").innerHTML = `<ul>${listItems()}</ul>`;
+//     inputText.value = '';   
+// })
 
-function listItems(){
-    let items = "";
-    for(i = 0; i < cities.length; i++){
-        items += `<li>${cities[i]}<button id="delBtn">X</button></li>`;
+// function listItems(){
+//     let items = "";
+//     for(i = 0; i < cities.length; i++){
+//         items += `<li><p>${cities[i]}</p><button id="delBtn">X</button></li>`;
+//     }
+//     return items;
+// }
+
+// document.querySelector("#outputContainer").innerHTML = `<ul>${listItems()}</ul>`;
+
+
+function save(){
+    const new_data = ' ' + document.querySelector("#inputText").value;
+    if(localStorage.getItem('data') == null){
+        localStorage.setItem('data', '[]');
     }
-    return items;
+
+    const old_data = JSON.parse(localStorage.getItem('data'));
+    old_data.push(new_data);
+
+    localStorage.setItem('data', JSON.stringify(old_data));
+    view();
 }
 
-document.querySelector("#outputContainer").innerHTML = `<ul>${listItems()}</ul>`;
+function view(){
+    if(localStorage.getItem('data') != null){
+        document.querySelector("#outputContainer").innerHTML = JSON.parse(localStorage.getItem('data'));
+    }
+}
+view();

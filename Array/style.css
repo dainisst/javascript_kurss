@@ -1,14 +1,36 @@
+h1, h2, input{
+    margin-left: 30px;
+}
 li{
     list-style: none;
-    padding: 10px;    
+    padding: 5px;
+    padding-left: 20px;   
     margin: 5px;
     font-size: 18px;
-    background-color: aquamarine;    
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    text-transform: capitalize;
 }
 ul{
     padding-left: 10px;
 }
 #delBtn{
     background: red;
-    border-radius: 10px;    
+    border-radius: 20px; 
+    width: 30px;   
+}
+p{
+    margin: 5px;
+}
+#inputText{
+    height: 25px;
+    width: 400px;
+    font-size: 16px;
+}
+#inputBtn{
+    height: 30px;
+    margin-left: 10px;
+    font-size: 18px;
 }
